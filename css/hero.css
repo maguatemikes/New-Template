@@ -1,6 +1,6 @@
 .hero_section {
   width: 100%;
-  background-image: url("/assets/images/hero_bg.jpg"); /* set your image path */
+  background-image: url("../assets/images/hero_bg.jpg"); /* set your image path */
   background-size: cover; /* make sure image covers entire section */
   background-position: center; /* center the image */
   background-repeat: no-repeat; /* avoid repeating the image */
