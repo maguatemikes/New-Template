@@ -1,0 +1,10 @@
+.collection_section {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    font-size: var(--font-h2);
+  }
+}

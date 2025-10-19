@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Your Brand | Primary Keyword - Secondary Keyword</title>
+    <meta
+      name="description"
+      content="Concise, compelling summary (150–160 chars). Describe what the page offers and why it matters."
+    />
+    <meta name="keywords" content="keyword1, keyword2, keyword3, keyword4" />
+    <meta name="author" content="Your Name or Brand" />
+
+    <!-- Canonical & Language -->
+    <link rel="canonical" href="https://www.yourwebsite.com/" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Your Brand | Primary Keyword - Secondary Keyword"
+    />
+    <meta
+      property="og:description"
+      content="Compelling Open Graph description for sharing on social media."
+    />
+    <meta property="og:url" content="https://www.yourwebsite.com/" />
+    <meta
+      property="og:image"
+      content="https://www.yourwebsite.com/images/og-image.jpg"
+    />
+    <meta property="og:site_name" content="Your Brand" />
+
+    <!-- Favicon & App Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Your Brand",
+        "url": "https://www.yourwebsite.com",
+        "logo": "https://www.yourwebsite.com/images/logo.png",
+        "sameAs": [
+          "https://www.facebook.com/yourbrand",
+          "https://twitter.com/yourbrand",
+          "https://www.instagram.com/yourbrand",
+          "https://www.linkedin.com/company/yourbrand"
+        ]
+      }
+    </script>
+
+    <!-- Preload & Prefetch for Performance -->
+    <link rel="preload" href="/css/styles.css" as="style" />
+    <link rel="preload" href="/js/main.js" as="script" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/collections.css" />
+    <link rel="stylesheet" href="css/features.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Accessibility and PWA Enhancements -->
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body>
+    <header role="banner" class="main_header">
+      <nav aria-label="Main Navigation" class="nav_main">
+        <a href="/" class="logo" aria-label="Go to homepage">
+          <!-- <img
+            src="/images/logo.svg"
+            alt="Your Brand Logo"
+            width="120"
+            height="40"
+          /> -->
+          BandanaNearMe.com
+        </a>
+        <ul class="nav_menu">
+          <li class="nav_list">
+            <a class="nav_link" href="/about" title="About Us">About</a>
+          </li>
+          <li class="nav_list">
+            <a class="nav_link" href="/services" title="Our Services"
+              >Services</a
+            >
+          </li>
+          <li class="nav_list">
+            <a class="nav_link" href="/blog" title="Read Our Blog">Blog</a>
+          </li>
+          <li class="nav_list">
+            <a class="nav_link" href="/contact" title="Contact Us">Contact</a>
+          </li>
+        </ul>
+
+        <button class="primary_btn" style="padding: var(--space-1) !important">
+          test
+        </button>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section id="hero" aria-label="Hero Section" class="hero_section">
+        <h1>
+          Premium Bandanas <br />
+          For Every Style
+        </h1>
+        <p>
+          Handcrafted premium bandanas that blend traditional craftsmanship with
+          modern style.<br />br Each piece tells a unique story of quality and
+          artistry.
+        </p>
+        <div class="header_btn_container">
+          <button class="primary_btn">Shop Collection</button>
+          <button class="secondary_btn">View Catalog</button>
+        </div>
+      </section>
+
+      <section
+        id="collections"
+        class="collection_section"
+        aria-label="Featured Collections"
+      >
+        <h2>Featured Collections</h2>
+        <p
+          style="
+            max-width: 600px;
+            text-align: center;
+            margin-bottom: var(--space-6);
+            line-height: var(--line-height-p);
+          "
+        >
+          Discover our carefully curated selection of premium bandanas, each
+          designed to complement your unique style and personality. From classic
+          patterns to modern interpretations.
+        </p>
+        <div class="sr-element sr-products" data-embed="multiple_products">
+          <script type="application/json" data-config="embed">
+            {
+              "publishable_key": "sr_live_pk_145ab336f6f3293a2a403d04d347f8e8caaf",
+              "options": {
+                "products_to_display": "all",
+                "categories": [],
+                "products": [],
+                "exclude_products": [],
+                "exclude_product_categories": [],
+                "image_dimension_value": "fit",
+                "image_aspect_ratio": "square",
+                "button_style": "standard",
+                "variation_style": "on_hover",
+                "open_product_in": "in_page",
+                "button_position": "inline",
+                "product_default_sorting_order": "product_order",
+                "product_pagination_limit": "12",
+                "desktop": { "items_per_row": "4" },
+                "mobile": { "items_per_row": "1" },
+                "hide_out_of_stock": "0"
+              },
+              "includes": {
+                "show_search_box": "1",
+                "show_sort_by": "1",
+                "show_per_page": "1",
+                "show_category_dropdown": "1",
+                "show_currency_dropdown": "1",
+                "show_language_dropdown": "1",
+                "show_product_filters": "1",
+                "show_product_name": "1",
+                "show_product_price": "1",
+                "show_product_image": "1",
+                "show_product_summary": "1",
+                "open_modal_on_image_click": "1",
+                "show_view_product_button": "1",
+                "show_add_to_cart_button": "1",
+                "show_min_max_order_quantity": "1",
+                "show_sale": "1",
+                "show_free_shipping": "1",
+                "show_new_product": "1",
+                "show_digital_download": "1",
+                "show_pwyw": "1",
+                "image_swap": "1",
+                "show_button_icons": "1",
+                "mobile": {
+                  "show_search_box": "1",
+                  "show_sort_by": "1",
+                  "show_per_page": "1",
+                  "show_category_dropdown": "1",
+                  "show_currency_dropdown": "1",
+                  "show_language_dropdown": "1",
+                  "show_product_filters": "1"
+                }
+              },
+              "product_popup": {
+                "show_product_name": "1",
+                "show_product_price": "1",
+                "show_product_summary": "1",
+                "show_product_description": "1",
+                "show_product_image": "1",
+                "show_add_to_cart_button": "1",
+                "show_select_quantity": "1",
+                "show_image_thumbnails": "1",
+                "show_product_reviews": "1",
+                "show_product_sku": "1",
+                "show_product_categories": "1",
+                "show_social_sharing_icons": "1",
+                "show_related_products": "1",
+                "thumbnail_layout": "horizontal_below",
+                "image_dimension_value": "crop",
+                "image_aspect_ratio": "square",
+                "variation_styling": "dropdown",
+                "show_min_max_order_quantity": "1",
+                "show_sale": "1",
+                "show_free_shipping": "1",
+                "show_new_product": "1",
+                "show_digital_download": "1",
+                "show_pwyw": "1",
+                "show_product_tabs": "1",
+                "image_zoom": "1",
+                "lightbox_gallery": "1",
+                "show_stock": "0"
+              },
+              "styles": {
+                "align_content": "center",
+                "product_title": "#314d5d",
+                "product_price": "#2d2d2d",
+                "product_summary": "#777777",
+                "button_background": "#2986cc",
+                "button_color": "#ffffff",
+                "view_product_button_background": "#2986cc",
+                "view_product_button_color": "#ffffff",
+                "view_cart_button_background": "#233642",
+                "view_cart_button_color": "#ffffff",
+                "product_background": "#ffffff",
+                "modal_background": "#ffffff",
+                "button_font_weight": "normal",
+                "popup": {
+                  "colors": {
+                    "product_title": "#333",
+                    "product_price": "#666666",
+                    "product_summary": "#666666",
+                    "button_background": "#233642",
+                    "button_color": "#ffffff",
+                    "product_active_tab_background": "#f5f5f5"
+                  }
+                },
+                "product_name_font_family": "Helvetica",
+                "product_summary_font_family": "Helvetica",
+                "product_price_font_size": "17",
+                "text_alignment": "left",
+                "embed_width": "1727",
+                "product_spacing": "0",
+                "product_padding": "16",
+                "filters_padding": "0",
+                "button_radius": "4",
+                "embed_margin": "0",
+                "image_radius": "0"
+              }
+            }
+          </script>
+        </div>
+        <script async src="https://cdn.shoprocket.io/loader.js"></script>
+      </section>
+
+      <section class="feature_section">
+        <h2>Why Choose Our Bandanas?</h2>
+        <p>
+          We're not just selling bandanas – we're crafting experiences. Every
+          detail matters, from the fabric we choose to the way we package your
+          order.
+        </p>
+        <div class="card_wrapper"></div>
+
+        <div class="cta_feature_wrapper">
+          <h3>Ready to Experience the Difference</h3>
+          <p>
+            Join thousands of satified customer who have our bandanas part of
+            their life
+          </p>
+
+          <div class="feature_btn_container" style="margin-top: var(--space-5)">
+            <button class="primary_btn">Shop Now</button>
+            <button class="secondary_btn">Contact Us</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <section aria-label="Footer Links">
+        <p>&copy; <span id="year"></span> Your Brand. All rights reserved.</p>
+        <nav aria-label="Footer Navigation">
+          <ul>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-of-service">Terms of Service</a></li>
+            <li><a href="/sitemap.xml">Sitemap</a></li>
+          </ul>
+        </nav>
+      </section>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/js/main.js" defer></script>
+    <script>
+      // Update footer year dynamically
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

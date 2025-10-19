@@ -1,0 +1,45 @@
+.hero_section {
+  width: 100%;
+  background-image: url("/assets/images/hero_bg.jpg"); /* set your image path */
+  background-size: cover; /* make sure image covers entire section */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; /* avoid repeating the image */
+  min-height: 100dvh;
+  border: 1px solid whitesmoke;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h1 {
+    font-size: var(--font-h1);
+    color: white;
+    line-height: var(--line-height-h1);
+    text-align: center;
+  }
+  p {
+    padding-top: var(--space-3);
+    color: white;
+    font-size: var(--font-h5);
+    text-align: center;
+    line-height: var(--line-height-xs);
+  }
+}
+
+.hero_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* 40% black */
+  z-index: 1;
+}
+
+/* Ensure content is above overlay */
+.hero_section > * {
+  position: relative;
+  z-index: 2;
+}
