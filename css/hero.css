@@ -1,9 +1,9 @@
 .hero_section {
   width: 100%;
-  background-image: url("../assets/images/hero_bg.webp"); /* set your image path */
-  background-size: cover; /* make sure image covers entire section */
-  background-position: center; /* center the image */
-  background-repeat: no-repeat; /* avoid repeating the image */
+  background-image: url("../assets/images/hero_bg-min.webp"); /* default image for desktop */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100dvh;
   position: relative;
   display: flex;
@@ -17,6 +17,7 @@
     line-height: var(--line-height-h1);
     text-align: center;
   }
+
   p {
     padding-top: var(--space-3);
     color: white;
@@ -33,7 +34,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4); /* 40% black */
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
@@ -41,4 +42,11 @@
 .hero_section > * {
   position: relative;
   z-index: 2;
+}
+
+/* Mobile-specific background */
+@media (max-width: 768px) {
+  .hero_section {
+    background-image: url("../assets/images/hero_bg_mobile-min.webp"); /* mobile image */
+  }
 }
