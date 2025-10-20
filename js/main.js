@@ -63,3 +63,70 @@ const renderCards = () => {
 };
 
 renderCards();
+
+const navigationAnim = () => {
+  const header = document.querySelector(".main_header");
+  const navMain = document.querySelector(".nav_main");
+
+  const handleScroll = () => {
+    // Only run on desktop
+    if (window.innerWidth > 768) {
+      if (window.scrollY > 10) {
+        header.style.backgroundColor = "transparent";
+        navMain.style.borderRadius = "50px";
+        navMain.style.backgroundColor = "rgba(255, 255, 255, 0.6)";
+        navMain.style.backdropFilter = "blur(10px)";
+        navMain.style.webkitBackdropFilter = "blur(10px)";
+        navMain.style.marginTop = "16px"; // updated marginTop
+      } else {
+        navMain.style.backgroundColor = "white";
+        navMain.style.backdropFilter = "none";
+        navMain.style.webkitBackdropFilter = "none";
+        navMain.style.borderRadius = "0";
+        header.style.backgroundColor = "white";
+        navMain.style.marginTop = "0"; // reset marginTop
+      }
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  window.addEventListener("resize", handleScroll);
+};
+
+navigationAnim();
+
+const handleNavMenu = () => {
+  const hamburgerMenu = document.querySelector(".hamburger_menu");
+  const navMenu = document.querySelector(".nav_menu");
+  const navLinks = document.querySelectorAll(".nav_menu .nav_link"); // all links inside nav_menu
+
+  // Only add event listeners if mobile
+  const isMobile = () => window.innerWidth <= 768;
+
+  // Toggle menu on hamburger click
+  hamburgerMenu.addEventListener("click", () => {
+    if (!isMobile()) return; // exit if not mobile
+
+    const attribute = navMenu.getAttribute("data-open");
+
+    if (attribute === "false") {
+      navMenu.style.transform = "translateX(0)";
+      navMenu.setAttribute("data-open", "true");
+    } else {
+      navMenu.style.transform = "translateX(500px)";
+      navMenu.setAttribute("data-open", "false");
+    }
+  });
+
+  // Close menu when a link is clicked
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (!isMobile()) return; // exit if not mobile
+
+      navMenu.style.transform = "translateX(500px)";
+      navMenu.setAttribute("data-open", "false");
+    });
+  });
+};
+
+handleNavMenu();

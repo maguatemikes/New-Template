@@ -11,7 +11,7 @@
 }
 
 .testimonials_container h2 {
-  font-size: 2.5rem;
+  font-size: var(--font-h2);
   font-weight: 700;
   color: #0f172a;
   margin-bottom: 1rem;
@@ -20,7 +20,7 @@
 .testimonials_container .subtitle {
   max-width: 650px;
   margin: 0 auto 4rem;
-  font-size: 1.1rem;
+  font-size: var(--font-p);
   color: #555;
   line-height: 1.6;
 }

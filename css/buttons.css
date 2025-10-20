@@ -3,13 +3,13 @@
   color: white;
   padding: var(--space-2);
   font-size: var(--font-h6);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-rounded);
 }
 
 .secondary_btn {
   background-color: transparent;
   border: 1px solid white;
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-rounded);
   color: white;
   font-size: var(--font-h6);
   padding: var(--space-2);

@@ -82,6 +82,10 @@
 
 /* Media query for mobile - one column grid */
 @media (max-width: 768px) {
+  .feature_section {
+    padding-inline: var(--space-2);
+  }
+
   .feature_section .card_wrapper {
     grid-template-columns: 1fr;
   }
