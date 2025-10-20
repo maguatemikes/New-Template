@@ -1,108 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Basic Meta Tags -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Your Brand | Primary Keyword - Secondary Keyword</title>
-    <meta
-      name="description"
-      content="Concise, compelling summary (150–160 chars). Describe what the page offers and why it matters."
-    />
-    <meta name="keywords" content="keyword1, keyword2, keyword3, keyword4" />
-    <meta name="author" content="Your Name or Brand" />
+<head>
+  <!-- Basic Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Your Brand | Primary Keyword - Secondary Keyword</title>
+  <meta
+    name="description"
+    content="Concise, compelling summary (150–160 chars). Describe what the page offers and why it matters."
+  />
+  <meta name="keywords" content="keyword1, keyword2, keyword3, keyword4" />
+  <meta name="author" content="Your Name or Brand" />
 
-    <!-- Canonical & Language -->
-    <link rel="canonical" href="https://www.yourwebsite.com/" />
-    <meta name="robots" content="index, follow" />
+  <!-- Canonical & Language -->
+  <link rel="canonical" href="https://www.yourwebsite.com/" />
+  <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:title"
-      content="Your Brand | Primary Keyword - Secondary Keyword"
-    />
-    <meta
-      property="og:description"
-      content="Compelling Open Graph description for sharing on social media."
-    />
-    <meta property="og:url" content="https://www.yourwebsite.com/" />
-    <meta
-      property="og:image"
-      content="https://www.yourwebsite.com/images/og-image.jpg"
-    />
-    <meta property="og:site_name" content="Your Brand" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta
+    property="og:title"
+    content="Your Brand | Primary Keyword - Secondary Keyword"
+  />
+  <meta
+    property="og:description"
+    content="Compelling Open Graph description for sharing on social media."
+  />
+  <meta property="og:url" content="https://www.yourwebsite.com/" />
+  <meta
+    property="og:image"
+    content="https://www.yourwebsite.com/images/og-image.jpg"
+  />
+  <meta property="og:site_name" content="Your Brand" />
 
-    <!-- Favicon & App Icons -->
-    <link rel="icon" href="/favicon.ico" sizes="any" />
+  <!-- Favicon & App Icons -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
 
-    <!-- Schema.org Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Your Brand",
-        "url": "https://www.yourwebsite.com",
-        "logo": "https://www.yourwebsite.com/images/logo.png",
-        "sameAs": [
-          "https://www.facebook.com/yourbrand",
-          "https://twitter.com/yourbrand",
-          "https://www.instagram.com/yourbrand",
-          "https://www.linkedin.com/company/yourbrand"
-        ]
-      }
-    </script>
+  <!-- Schema.org Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Your Brand",
+      "url": "https://www.yourwebsite.com",
+      "logo": "https://www.yourwebsite.com/images/logo.png",
+      "sameAs": [
+        "https://www.facebook.com/yourbrand",
+        "https://twitter.com/yourbrand",
+        "https://www.instagram.com/yourbrand",
+        "https://www.linkedin.com/company/yourbrand"
+      ]
+    }
+  </script>
 
-    <!-- Preload & Prefetch for Performance -->
-    <link rel="preload" href="css/styles.css" as="style" />
-    <link rel="preload" href="js/main.js" as="script" />
-    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+  <!-- Preload & Prefetch for Performance -->
+  <link rel="preload" href="js/main.js" as="script" />
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//www.googletagmanager.com" />
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/hero.css" />
-    <link rel="stylesheet" href="css/collections.css" />
-    <link rel="stylesheet" href="css/features.css" />
-    <link rel="stylesheet" href="css/buttons.css" />
-    <link rel="stylesheet" href="css/about.css" />
-    <link rel="stylesheet" href="css/testimonial.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+  <!-- Preload hero images -->
+  <link rel="preload"
+        as="image"
+        href="assets/images/hero_bg-min.webp"
+        media="(min-width: 769px)">
+  <link rel="preload"
+        as="image"
+        href="assets/images/hero_bg_mobile-min.webp"
+        media="(max-width: 768px)"
+        imagesrcset="assets/images/hero_bg_mobile-min.webp 1x, assets/images/hero_bg_mobile@2x.webp 2x"
+        imagesizes="100vw">
 
-    <!-- Accessibility and PWA Enhancements -->
-    <meta name="theme-color" content="#ffffff" />
+  <!-- Google Fonts preload -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+        media="print"
+        onload="this.media='all'">
 
-    <style>
-      /* Critical CSS */
-      .hero_section {
-        width: 100%;
-        background-image: url("../assets/images/hero_bg-min.webp");
-        background-size: cover;
-        background-position: center;
-        min-height: 100dvh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
+  <!-- Stylesheets (render-blocking, can be deferred if needed) -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/collections.css" />
+  <link rel="stylesheet" href="css/features.css" />
+  <link rel="stylesheet" href="css/buttons.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/testimonial.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 
-      .hero_section h1 {
-        font-size: var(--font-h1);
-        color: white;
-        text-align: center;
-      }
+  <!-- Accessibility and PWA Enhancements -->
+  <meta name="theme-color" content="#ffffff" />
+</head>
 
-      .hero_section p {
-        padding-top: var(--space-3);
-        color: white;
-        text-align: center;
-      }
-    </style>
-  </head>
 
   <body style="position: relative">
     <header role="banner" class="main_header">
